@@ -1,11 +1,12 @@
 % homework.cls
 % LaTeX class for typesetting homework
-% Author: Artem Mavrin
+% Author (fork): Will Wolff-Myren
+% Original Author: Artem Mavrin
 %
 % The most recent version can be found here:
-% https://github.com/artemmavrin/latex-homework/blob/master/homework.cls
+% https://github.com/willwm/latex-homework/blob/master/homework.cls
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{homework}[2017/11/09 LaTeX class for typesetting homework]
+\ProvidesClass{homework}[2020-01-29 LaTeX class for typesetting homework (forked from artemmavrin)]
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -138,6 +139,20 @@
 % Mathematics packages
 \RequirePackage{amsmath, amsthm, amssymb}
 \RequirePackage{mathtools}
+
+% Convenience commands
+\newcommand{\eps}{\epsilon}
+\newcommand{\A}{\forall}
+\newcommand{\E}{\exists}
+\newcommand{\imp}{\rightarrow}
+\newcommand{\bimp}{\leftrightarrow}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\seq}[1]{\{#1\}}
+\newcommand{\linf}[1]{\lim_{#1\to\infty}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
